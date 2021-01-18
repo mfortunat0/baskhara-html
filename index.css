@@ -44,7 +44,11 @@
 
 p{
     width: 100%;
+    color: #6D5ACF;
     margin: 0;
+}
+span{
+    color: #6D5ACF;
 }
 
 label{
