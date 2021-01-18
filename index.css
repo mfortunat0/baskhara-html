@@ -41,6 +41,9 @@
     margin-right: 5px;
 }
 
+.resultNegative{
+    letter-spacing: -5px;
+}
 
 p{
     width: 100%;

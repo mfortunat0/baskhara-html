@@ -51,7 +51,7 @@ function calculate() {
         }
         else if (delta === 0) {
             const x = (bInput.value * -1) / (2 * aInput.value)
-            if (x < 1 && x > -1) {
+            if (x % 1 !== 0) {
                 let a = (bInput.value * -1)
                 let b = (2 * aInput.value)
                 for (let c = (a > b ? a : b); c > 1; c--) {
@@ -78,6 +78,11 @@ function calculate() {
         `
             }
             resultTitle.innerHTML = "Result:"
+        }
+        else {
+            resultTitle.innerHTML = `
+                <span class="resultNegative">/_\\</span> = ${delta}
+            `
         }
     }
 }
